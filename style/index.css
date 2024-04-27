@@ -1,0 +1,255 @@
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 版心 */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1152px;
+    /* background-color: skyblue; */
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+/* 页头 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.header .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header .search-input {
+    width: 215px;
+    padding: 12px 12px;
+    border: 0;
+    font-size: 14px;
+    color: #9199A1;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    background-color: #F3F5F6;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.header .right span {
+    height: 71px;
+    line-height: 71px;
+}
+
+.header .right span a {
+    font-size: 14px;
+    padding: 0 12px;
+}
+
+.header .left img {
+    width: 126px;
+    height: 72px;
+    margin: 0 20px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav li {
+    margin: 0 16px;
+}
+
+.header-nav li:hover a {
+    color: black;
+}
+
+.header a {
+    line-height: 71px;
+    text-align: center;
+    font-size: 16px;
+    color: #545C63;
+}
+
+/* 内容区 */
+.banner {
+    height: 482px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.banner .banner-container {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(150, 150, 150);
+}
+
+.banner .banner-box {
+    display: flex;
+
+}
+
+.menu-content {
+    width: 256px;
+    height: 382px;
+    background-color: #39364d;
+    border-top-left-radius: 10px;
+}
+
+.banner .banner-content {
+    width: 896px;
+    height: 382px;
+    background-color: rgb(227, 202, 202);
+    border-top-right-radius: 10px;
+}
+
+.banner .banner-content img {
+    width: 896px;
+    height: 382px;
+    border-top-right-radius: 10px;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content .item {
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+.menu-content .item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-content .item .title {
+    font-size: 14px;
+}
+
+.menu-content .item .sub-title {
+    font-size: 12px;
+}
+
+.system-class-show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.system-class-show .show-box {
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+
+.system-class-show .show-box:hover .system-class-icon {
+    transform: translateY(-2px);
+    transition: 0.25s;
+}
+
+.system-class-show .show-box:hover .describe h4 {
+    color: red;
+}
+
+.system-class-show .show-box .system-class-icon {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.system-class-show .show-box:nth-child(1) .system-class-icon {
+    background-image: url(../images/clazz/01.png);
+}
+
+.system-class-show .show-box:nth-child(2) .system-class-icon {
+    background-image: url(../images/clazz/02.jpg);
+}
+
+.system-class-show .show-box:nth-child(3) .system-class-icon {
+    background-image: url(../images/clazz/03.jpg);
+}
+
+.system-class-show .show-box:nth-child(4) .system-class-icon {
+    background-image: url(../images/clazz/04.jpg);
+}
+
+.system-class-show .show-box:nth-child(5) .system-class-icon {
+    background-image: url(../images/clazz/05.jpg);
+}
+
+.system-class-show .show-box:nth-child(1) {
+    margin-left: 16px;
+}
+
+.system-class-show .show-box .describe h4 {
+    font-size: 16px;
+    color: #1C1F21;
+    margin-bottom: 4px;
+}
+
+.system-class-show .show-box .describe p {
+    font-size: 12px;
+    color: #545C63;
+}
+
+.system-class-show .line {
+    height: 36px;
+    border: 1px solid #E8E8E8;
+}
+
+.system-class-show .all-btn {
+    width: 94px;
+    color: #1C1F21;
+    text-align: center;
+}
+
+.system-class-show .all-btn .mini-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.system-class-show .all-btn .more-btn {
+    font-size: 12px;
+    color: #545C63;
+}
+
+.hot {
+    height: 698px;
+    background-color: rgba(255, 60, 0, 0.09);
+}
+
+.line {
+    height: 510px;
+    background-color: rgba(0, 255, 60, 0.102);
+}
+
+.good {
+    height: 1228px;
+    background-color: rgba(0, 89, 255, 0.166);
+}
+
+/* 页脚 */
+.footer {
+    height: 276px;
+    background-color: black;
+}
